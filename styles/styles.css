@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --border-standard: 1px solid black;
@@ -58,6 +64,7 @@ main img {
     border: var(--border-standard);
     padding: var(--img-padding);
     box-shadow: var(--shadow-standard);
+    float: right;
 }
 
 footer {
@@ -65,3 +72,20 @@ footer {
     border-top: var(--border-standard);
     text-align: center;
 }
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: darkslategray;
+    color: #000;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
