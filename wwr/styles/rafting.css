@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,16 +16,19 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
-
 /*  targets three different HTML elements simultaneously by using a comma to specify each of these child elements of the document body. */
-
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1,h2 {
+header {
+    background-color: var(--secondary-color);
+}
+
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-style: italic;
@@ -36,9 +39,7 @@ nav, p, section, article {
     padding: 8px;
 }
 
-/*The descendant selector ( .socialmedia a ) only applies to anchor tags (a) that are children of elements with the socialmedia class and not to all anchor tags.*/
-
-.socialmedia a{
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1{
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -60,10 +61,15 @@ h1{
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text – make sure there is enough contrast with the background-color */
+    color: #fff;
 }
 
 .hero article img {
     float: right;
     width: 360px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 16px;
 }
