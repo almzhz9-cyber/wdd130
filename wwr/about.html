@@ -1,4 +1,3 @@
-<!--adding the ! at the beggining of the code is important -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -10,44 +9,86 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<!-- adding li makes everything apear as a list -->
 <body>
-    <header> <img src="images/wwr.png" alt="rafting-logo">
+
+    <!-- HEADER: Grid handles logo + nav side by side -->
+    <header>
+        <img src="images/wwr.png" alt="rafting-logo">
         <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="trips.html">Trips</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
+
+        <!-- HERO -->
         <div class="hero">
-            <img  src="images/rafting.jpg" alt="people-rafting-through-rocks">
-            <h1> Colorado River Rafting Co </h1>
-            <article><img src="images/enjoying_rafting.jpg" alt="people-enjoying-rafting"></article>
-            <p>company purpose, mission, creed, motto, etc</p>
+            <img src="images/rafting.jpg" alt="people rafting through rocks">
+            <h1>Colorado River Rafting Co.</h1>
+            <article>
+                <img src="images/enjoying_rafting.jpg" alt="people enjoying rafting">
+                <p>Our mission is to deliver safe, thrilling, and unforgettable rafting adventures for everyone.</p>
+            </article>
         </div>
-   
-    <section>
-        <h2>History</h2>
-        <p>brief history of the company.</p>
-    </section>
-    <section>
-        <h2>Adventure Awaits You!</h2>
-    </section>
+
+        <!-- HISTORY SECTION -->
+        <section id="history">
+            <div class="history-text">
+                <h2>Our History</h2>
+                <p>Founded in 1990, Colorado River Rafting Co. has been guiding adventurers through the most breathtaking rapids in the region for over three decades.</p>
+            </div>
+            <div class="history-image">
+                <img src="images/history.jpg" alt="Company founders on the river">
+            </div>
+        </section>
+
+        <!-- ADVENTURES SECTION -->
+        <section id="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventures-grid">
+
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapids">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard rapids">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Full Day Adventure">
+                    <figcaption>Full Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Sunset Rapids">
+                    <figcaption>Sunset Rapids</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
     </main>
 
-<footer>
-    <p>©️2026 | Rafting Company name | Alejandro Munoz</p>
-    <nav class="socialmedia">
-        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook_icon"></a>
-        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram_icon"></a>
-        <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube_icon"></a>
-    </nav>
-</footer>
-</body>
+    <!-- FOOTER -->
+    <footer>
+        <p>©️2026 | Colorado River Rafting Co. | Alejandro Munoz</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook_icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram_icon"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube_icon"></a>
+        </nav>
+    </footer>
 
+</body>
 </html>

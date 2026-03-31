@@ -27,6 +27,16 @@ header, main, footer {
 header {
     background-color: var(--secondary-color);
     color: #fff;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* FIX 3 — control logo size inside header */
+header img {
+    width: 120px;
+    height: auto;
 }
 
 h1, h2 {
@@ -39,18 +49,40 @@ h2 {
     color: var(--accent1-color);
 }
 
+
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
 }
 
-.socialmedia img {
-    width: 40px;
-    height: 40px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+#history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .hero {
@@ -89,8 +121,61 @@ nav, p, section, article {
     width: 360px;
 }
 
+#adventures {
+    padding: 2rem;
+    text-align: center;
+}
+
+.adventures-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adventures-grid figure {
+    flex: 1;
+    margin: 0;
+}
+
+.adventures-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.adventures-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
     padding: 16px;
     color: #fff;
+    width: 840px;
+    margin: 0 auto;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
 }
