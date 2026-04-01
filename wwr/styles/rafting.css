@@ -5,9 +5,9 @@
 }
  
 :root {
-    --primary-color: darkslategray;    
-    --secondary-color: #2e8b57;
-    --accent1-color: #b5860d;           
+    --primary-color: darkslategray;
+    --secondary-color: #27764a;   
+    --accent1-color: #8b670a;    
     --accent2-color: #f5f0e8;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
