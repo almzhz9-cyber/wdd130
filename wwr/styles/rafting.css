@@ -3,27 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 :root {
-    --primary-color: darkslategray;
+    --primary-color: darkslategray;    
     --secondary-color: #2e8b57;
-    --accent1-color: #d4a017;
+    --accent1-color: #b5860d;           
     --accent2-color: #f5f0e8;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-
+ 
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
     background-color: var(--accent2-color);
 }
-
-header, main, footer {
+ 
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
-
+ 
 header {
     background-color: var(--secondary-color);
     color: #fff;
@@ -32,27 +34,10 @@ header {
     align-items: center;
     padding: 1rem 2rem;
 }
-
-/* FIX 3 — control logo size inside header */
+ 
 header img {
     width: 120px;
     height: auto;
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    font-style: italic;
-}
-
-h2 {
-    color: var(--accent1-color);
-}
-
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
 }
 
 nav {
@@ -60,16 +45,67 @@ nav {
     justify-content: flex-end;
     gap: 1.5rem;
 }
-
+ 
 nav a {
-    color: #fff;
+    color: #fff;                         
     text-decoration: none;
     font-family: var(--body-font);
     font-weight: bold;
 }
-
+ 
 nav a:hover {
-    color: var(--accent1-color);
+    color: #ffe082;                       
+}
+ 
+h1,
+h2 {
+    font-family: var(--heading-font);
+    font-style: italic;
+}
+ 
+h1 {
+    color: #fff;                      
+}
+ 
+h2 {
+    color: var(--accent1-color);         
+}
+
+.hero {
+    position: relative;
+}
+ 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+ 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 360px;
+    padding: 16px;
+    background-color: var(--accent2-color);
+    opacity: 0.9;
+}
+ 
+.hero article img {
+    float: right;
+    width: 160px;
+    height: auto;
 }
 
 #history {
@@ -79,78 +115,51 @@ nav a:hover {
     padding: 2rem;
     align-items: center;
 }
-
+ 
+.history-text h2 {
+    margin-bottom: 0.75rem;
+}
+ 
 .history-image img {
     width: 100%;
     border-radius: 8px;
 }
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 360px;
-    padding: 16px;
-    background-color: var(--accent2-color);
-    opacity: 0.85;
-}
-
-.hero article img {
-    float: right;
-    width: 360px;
-}
-
+ 
 #adventures {
     padding: 2rem;
     text-align: center;
 }
-
+ 
+#adventures h2 {
+    margin-bottom: 1rem;
+}
+ 
 .adventures-grid {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     margin-top: 1rem;
 }
-
+ 
 .adventures-grid figure {
     flex: 1;
     margin: 0;
 }
-
+ 
 .adventures-grid img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
 }
-
+ 
 .adventures-grid figcaption {
     margin-top: 0.5rem;
     font-size: 0.85rem;
     font-style: italic;
-    color: var(--primary-color);
+    color: var(--primary-color);    
 }
+ 
 
 footer {
     display: flex;
@@ -158,11 +167,11 @@ footer {
     align-items: center;
     background-color: var(--secondary-color);
     padding: 16px;
-    color: #fff;
+    color: #fff;         
     width: 840px;
     margin: 0 auto;
 }
-
+ 
 .socialmedia {
     display: flex;
     gap: 1rem;
@@ -170,11 +179,11 @@ footer {
     margin: 0;
     padding: 0;
 }
-
+ 
 .socialmedia a {
     text-decoration: none;
 }
-
+ 
 .socialmedia img {
     width: 40px;
     height: 40px;
