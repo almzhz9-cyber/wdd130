@@ -11,7 +11,7 @@
 
 <body>
 
-    <!-- HEADER: Grid handles logo + nav side by side -->
+    <!-- HEADER: CSS Grid — logo left, nav right -->
     <header>
         <img src="images/wwr.png" alt="rafting-logo">
         <nav>
@@ -22,61 +22,65 @@
         </nav>
     </header>
 
- <main>
-    <div class="hero">
-        <img src="images/rafting.jpg" alt="people rafting through rocks">
-        <h1>Colorado River Rafting Co.</h1>
-        <article>
-            <img src="images/enjoying_rafting.jpg" alt="people enjoying rafting">
-            <p>Our mission is to deliver safe, thrilling, and unforgettable rafting adventures for everyone.</p>
-        </article>
-    </div>
+    <!-- SINGLE main element — duplicate removed -->
+    <main>
 
-    <section id="history">
-        <div class="history-text">
-            <h2>History</h2>
-            <p>Founded in 1990, Colorado River Rafting Co. has been guiding adventurers through the most breathtaking rapids in the region for over three decades.</p>
+        <div class="hero">
+            <img src="images/rafting.jpg" alt="people rafting through rocks">
+            <h1>Colorado River Rafting Co.</h1>
+            <article>
+                <img src="images/enjoying_rafting.jpg" alt="people enjoying rafting">
+                <p>Our mission is to deliver safe, thrilling, and unforgettable rafting adventures for everyone.</p>
+            </article>
         </div>
-        <div class="history-image">
-            <img src="images/history.jpg" alt="Company founders on the river">
-        </div>
-    </section>
 
-    <section id="adventures">
-        <h2>Adventure Awaits You!</h2>
-        <div class="adventures-grid">
+        <!-- HISTORY section — required content -->
+        <section id="history">
+            <div class="history-text">
+                <h2>Our History</h2>
+                <p>Founded in 1990, Colorado River Rafting Co. has been guiding adventurers through the most breathtaking rapids in the region for over three decades. What started as a small family business has grown into one of the most trusted rafting outfitters in the Colorado River area.</p>
+            </div>
+            <div class="history-image">
+                <img src="images/history.jpg" alt="Company founders on the river">
+            </div>
+        </section>
 
-            <figure>
-                <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapids">
-                <figcaption>Los Dientes del Diablo</figcaption>
-            </figure>
+        <!-- ADVENTURES section — required content -->
+        <section id="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventures-grid">
 
-            <figure>
-                <img src="images/adventure2.jpg" alt="Big Mallard rapids">
-                <figcaption>Big Mallard</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapids">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/adventure3.jpg" alt="Half Day Adventure">
-                <figcaption>Half Day Adventure</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard rapids">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/adventure4.jpg" alt="Full Day Adventure">
-                <figcaption>Full Day Adventure</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/adventure5.jpg" alt="Sunset Rapids">
-                <figcaption>Sunset Rapids</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Full Day Adventure">
+                    <figcaption>Full Day Adventure</figcaption>
+                </figure>
 
-        </div>
-    </section>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Sunset Rapids">
+                    <figcaption>Sunset Rapids</figcaption>
+                </figure>
 
-</main>
+            </div>
+        </section>
 
-    <!-- FOOTER -->
+    </main>
+
+    <!-- FOOTER: Flex — copyright left, social icons right -->
     <footer>
         <p>©️2026 | Colorado River Rafting Co. | Alejandro Munoz</p>
         <nav class="socialmedia">
